@@ -15,7 +15,7 @@ async function getWeatherData(lat, lon) {
       const response = await axios.get(URL);
       return generateCard(response.data)
     } catch (error) {
-      throw new Error('Failed to fetch weather data from OpenWeatherMap API');
+      throw alert('City not found')
     }
   }
 
