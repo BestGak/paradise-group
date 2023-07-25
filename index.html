@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.12/css/weather-icons.min.css" integrity="sha512-r/Gan7PMSRovDus++vDS2Ayutc/cSdl268u047n4z+k7GYuR7Hiw71FsT3QQxdKJBVHYttOJ6IGLnlM9IoMToQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>PARADISE GROUP Test Task</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="header__title">This is test task for <span>PARADISE GROUP</span></h1>
+            <div class="header__search">
+                <input id="lat" type="text" required placeholder="Write lat">
+                <input id="lon" type="text" required placeholder="Write lon">
+                <button onclick="getLatLon()" id="search_wheather">Get Wheather</button>
+            </div>
+        </div>
+    </header>
+    <section class="city-wheather">
+        <div class="container">
+            <div class="city-wheather__wrapper">
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
