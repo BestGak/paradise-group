@@ -23,7 +23,7 @@ const generateCard = (cardData) => {
     const cityWrapper = document.querySelector('.city-wheather__wrapper');
     const formatedTemp = (cardData.main.temp - 273).toFixed();
     cityWrapper.innerHTML = `
-    <div id="weather_wrapper open">
+    <div id="weather_wrapper">
       <div class="weatherCard">
           <div class="currentTemp">
           <span class="temp">${formatedTemp}&deg;</span>
